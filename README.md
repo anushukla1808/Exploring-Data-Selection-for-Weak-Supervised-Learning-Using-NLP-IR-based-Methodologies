@@ -1,2 +1,4 @@
 # Exploring-Data-Selection-for-Weak-Supervised-Learning-Using-NLP-IR-based-Methodologies
-This project focuses on selecting data for weak supervised learning, addressing noisy data in deep learning. QPP, an NLP/IR technique, estimates neighborhood quality for data instances. Useful for noisy data and labels, it enhances classifier training by treating data like queries and neighbors like documents, improving results.
+The project focuses on data selection for weak supervised learning.In deep learning sometimes, the available data may be noisy. This drawback can make it challenging to train the program effectively and may affect the results. The idea of QPP (Query Performance Prediction), NLP/IR technique, will be used to estimate the quality of the neighborhood of a data instance. It is useful when both the data instances and the labels are noisy as it provides an estimate of the reliability of a training data instance. The goal is to train a classifier on clean instances to achieve better results, drawing an analogy between a query and a data instance, and the top-k documents and the neighborhood of other points around a data instance.
+
+
