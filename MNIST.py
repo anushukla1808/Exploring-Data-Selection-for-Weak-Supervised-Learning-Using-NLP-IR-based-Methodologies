@@ -78,3 +78,9 @@ ratios = [0, 0.1, 0.3, 0.5, 0.7, 0.9]
 for r in ratios:
     accuracy, precision, recall, f1 = run_experiment(data, labels, x_test, y_test, r)
     print(f"Corruption Ratio: {r}, Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1-score: {f1}")
+
+ratios = [0, 0.1, 0.3, 0.5, 0.7, 0.9]
+# Run the experiment for each corruption ratio
+for r in ratios:
+    accuracy, precision, recall, f1 = run_experiment(data, labels, x_test, y_test, r)
+    print(f"Corruption Ratio: {r}, Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1-score: {f1}")
