@@ -16,12 +16,13 @@ np.random.seed(0)
 # Load MNIST dataset
 (data, labels), (x_test, y_test) = mnist.load_data()
 
-data.shape
-labels.shape
-x_test.shape
-y_test.shape
+# Store original labels before any corruption
+original_labels = labels.copy()
 
 def run_experiment(data, labels, x_test, y_test, corruption_ratio):
+    # Reset labels to the original before applying any new corruption
+    labels = original_labels.copy()
+
     # Preprocess the data
     x_train = data.reshape(data.shape[0], 28, 28, 1).astype('float32')
     x_test = x_test.reshape(x_test.shape[0], 28, 28, 1).astype('float32')
